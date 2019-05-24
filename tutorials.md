@@ -33,6 +33,6 @@ Note: for the EDA if reading xls files using pandas, need pkg `xlrd`
 ```bash
 source ~/anaconda3/bin/activate
 conda activate ELA
-cd /home/$USER/src/github_jm/pyela/docs/tutorials
+cd /home/$USER/src/github_jm/pyela-doc/tutorials
 jupyter-lab .
 ```
