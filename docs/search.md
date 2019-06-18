@@ -13,3 +13,20 @@ uninstalled everything nvidia-* then found [deb wiki NvidiaGraphicsDrivers](http
 update-alternatives: error: alternative /usr/lib/nvidia/bumblebee for glx not registered; not setting
 rmmod: ERROR: Module nouveau is in use
 ```
+
+## Testing PVGeo and pyvista (ex vtki) - 2019-05
+
+https://github.com/jessepisel/5minutesofpython/blob/master/Well%20log%20plots/PyVista.ipynb
+
+adding to my ELA env:
+
+```bash
+cd ~/src/ela
+cd pyvista
+pip install appdirs nbval imageio-ffmpeg
+
+python setup.py develop
+
+pip install panel
+pip install PVGeo
+```
