@@ -2,14 +2,16 @@
 
 This repository hosts documentation for the [Python package 'ela'](https://github.com/jmp75/pyela) (Exploratory Lithology Analysis)
 
+[![Getting started tutorial - Bungendore 3D lithology](https://raw.githubusercontent.com/csiro-hydrogeology/pyela-doc/master/tutorials/img/3d_overlay_bungendore_clay_lithology_small.png "Getting started tutorial - Bungendore 3D lithology")](https://github.com/csiro-hydrogeology/pyela-doc/blob/master/tutorials/getting_started.ipynb)
+
 ## Tutorials
 
-GitHub may render the following notebook correctly if you want to browse tutorials.
+GitHub may render the following notebook correctly if you want to browse tutorials without installing.
 
 * [Getting Started](./tutorials/getting_started.ipynb)
 * [Lithology classification - methods comparisons](./tutorials/lithology_classification_ml.ipynb)
 
-To run the tutorials on your machine, we recommend you use conda, e.g. [miniconda](https://docs.conda.io/en/latest/miniconda.html) for Python 3. The following instructions should set things up for running.
+To run the tutorials on your machine, we **strongly** recommend you use conda, e.g. [miniconda](https://docs.conda.io/en/latest/miniconda.html) for Python 3. The following instructions should set things up for running.
 
 ### Linux 
 
@@ -26,11 +28,24 @@ wget https://raw.githubusercontent.com/https://github.com/csiro-hydrogeology/pye
 
 ```bash
 wget https://raw.githubusercontent.com/csiro-hydrogeology/pyela-doc/master/configs/ela_doc_environment.yml
-my_env_name=eladoc
+my_env_name=ela_doc
 conda env create -n $my_env_name -f ./ela_doc_environment.yml python=3.7
 conda activate $my_env_name 
-jupyter-labextension install @jupyter-widgets/jupyterlab-manager
 python -m ipykernel install --user --name ${my_env_name} --display-name "Py3 $my_env_name"
+```
+
+#### Optional
+
+To activate the possible interactive widgets in notebooks we need `nodejs` installed. If not already on your system, you may use a conda package:
+
+```bash
+conda install -n $my_env_name nodejs
+```
+
+Then the following should register the `widgets`
+
+```bash
+jupyter-labextension install @jupyter-widgets/jupyterlab-manager
 ```
 
 ```bash
@@ -49,13 +64,25 @@ or download [getting_started.ipynb](https://raw.githubusercontent.com/https://gi
 
 Download [ela_doc_environment.yml](https://raw.githubusercontent.com/csiro-hydrogeology/pyela-doc/master/configs/ela_doc_environment.yml)
 
-
 ```bat
-set my_env_name=eladoc
+set my_env_name=ela_doc
 conda env create -n %my_env_name% -f ./ela_doc_environment.yml python=3.7
 conda activate %my_env_name% 
-jupyter-labextension install @jupyter-widgets/jupyterlab-manager
 python -m ipykernel install --user --name ${my_env_name} --display-name "Py3 %my_env_name%"
+```
+
+#### Optional
+
+To activate the possible interactive widgets in notebooks we need `nodejs` installed. If not already on your system, you may use a conda package:
+
+```bash
+conda install -n $my_env_name nodejs
+```
+
+Then the following should register the `widgets`
+
+```bash
+jupyter-labextension install @jupyter-widgets/jupyterlab-manager
 ```
 
 ```bat
