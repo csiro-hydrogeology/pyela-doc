@@ -6,10 +6,10 @@ This repository hosts documentation for the [Python package 'ela'](https://githu
 
 ## Tutorials
 
-GitHub may render the following notebook correctly if you want to browse tutorials without installing.
+NBViewer will render the following notebooks correctly if you want to browse tutorials without installing.
 
-* [Getting Started](./tutorials/getting_started.ipynb)
-* [Lithology classification - methods comparisons](./tutorials/lithology_classification_ml.ipynb)
+* [Getting Started](https://nbviewer.jupyter.org/github/csiro-hydrogeology/pyela-doc/blob/master/tutorials/getting_started.ipynb)
+* [Lithology classification - methods comparisons](https://nbviewer.jupyter.org/github/csiro-hydrogeology/pyela-doc/blob/master/tutorials/lithology_classification_ml.ipynb)
 
 To run the tutorials on your machine, we **strongly** recommend you use conda, e.g. [miniconda](https://docs.conda.io/en/latest/miniconda.html) for Python 3. The following instructions should set things up for running.
 
@@ -60,7 +60,7 @@ cd %USERPROFILE%\src
 git clone git@github.com:csiro-hydrogeology/pyela-doc.git
 ```
 
-or download [getting_started.ipynb](https://raw.githubusercontent.com/https://github.com/csiro-hydrogeology/pyela-doc/blob/master/tutorials/getting_started.ipyn)
+or download [getting_started.ipynb](https://raw.githubusercontent.com/csiro-hydrogeology/pyela-doc/master/tutorials/getting_started.ipynb)
 
 Download [ela_doc_environment.yml](https://raw.githubusercontent.com/csiro-hydrogeology/pyela-doc/master/configs/ela_doc_environment.yml)
 
