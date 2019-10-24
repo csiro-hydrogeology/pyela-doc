@@ -2,7 +2,7 @@
 
 This repository hosts documentation for the [Python package 'ela'](https://github.com/jmp75/pyela) (Exploratory Lithology Analysis)
 
-[![Getting started tutorial - Bungendore 3D lithology](https://raw.githubusercontent.com/csiro-hydrogeology/pyela-doc/master/tutorials/img/3d_overlay_bungendore_clay_lithology_small.png "Getting started tutorial - Bungendore 3D lithology")](https://github.com/csiro-hydrogeology/pyela-doc/blob/master/tutorials/getting_started.ipynb)
+[![Getting started tutorial - Bungendore 3D lithology](https://raw.githubusercontent.com/csiro-hydrogeology/pyela-doc/master/tutorials/img/3d_overlay_bungendore_clay_lithology_small.png "Getting started tutorial - Bungendore 3D lithology")](https://nbviewer.jupyter.org/github/csiro-hydrogeology/pyela-doc/blob/master/tutorials/getting_started.ipynb)
 
 ## Tutorials
 
